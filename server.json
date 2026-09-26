@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.promptpetal/prompts",
+  "description": "Your saved Prompt Petal prompts in any AI app: list, use and improve them. Local, from the desktop app.",
+  "version": "1.2.0",
+  "websiteUrl": "https://promptpetal.com/ai-apps.html",
+  "repository": { "url": "https://github.com/none298-dotcom/promptpetal-mcp", "source": "github" },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@promptpetal/mcp",
+      "version": "1.2.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "PROMPTPETAL_APP",
+          "description": "Optional path to Prompt Petal's MCP server, if the app is installed somewhere unusual.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
