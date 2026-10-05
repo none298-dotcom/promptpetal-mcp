@@ -1,0 +1,25 @@
+{
+  "manifest_version": "0.3",
+  "name": "prompt-petal",
+  "display_name": "Prompt Petal",
+  "version": "1.4.0",
+  "description": "Your saved Prompt Petal prompts in Claude Desktop.",
+  "long_description": "List your Prompt Petal prompts, use one on what you are working on, and save new ones. The server runs inside the Prompt Petal desktop app on your computer and reads the prompts you keep there. Needs Prompt Petal for Mac, Windows or Linux, with Pro.",
+  "author": { "name": "Little Bird Trading", "email": "hello@littlebirdtrading.com", "url": "https://promptpetal.com" },
+  "homepage": "https://promptpetal.com/ai-apps?ref=claude-desktop",
+  "support": "https://promptpetal.com/help",
+  "server": {
+    "type": "node",
+    "entry_point": "index.mjs",
+    "mcp_config": { "command": "node", "args": ["${__dirname}/index.mjs"] }
+  },
+  "tools": [
+    { "name": "list_prompts", "description": "Lists your prompts by name." },
+    { "name": "use_prompt", "description": "Returns one prompt's words, with your text filled in." },
+    { "name": "add_prompt", "description": "Saves a new prompt to Prompt Petal." },
+    { "name": "improve_prompt", "description": "Rewrites a prompt so an AI follows it better." }
+  ],
+  "compatibility": { "platforms": ["darwin", "win32", "linux"], "runtimes": { "node": ">=18" } },
+  "keywords": ["prompts", "prompt manager"],
+  "license": "MIT"
+}

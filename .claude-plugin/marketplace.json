@@ -1,0 +1,15 @@
+{
+  "name": "prompt-petal",
+  "owner": {
+    "name": "Little Bird Trading",
+    "email": "hello@littlebirdtrading.com"
+  },
+  "plugins": [
+    {
+      "name": "prompt-petal",
+      "source": "./",
+      "description": "Your saved Prompt Petal prompts in Claude Code, through the Prompt Petal desktop app on your computer."
+    }
+  ],
+  "description": "Prompt Petal for Claude Code: your saved prompts, through the Prompt Petal desktop app on your computer."
+}

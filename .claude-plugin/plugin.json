@@ -1,0 +1,10 @@
+{
+  "name": "prompt-petal",
+  "version": "1.4.0",
+  "description": "Your saved Prompt Petal prompts in Claude Code: list them, use one on what you are working on, save new ones. Runs locally through the Prompt Petal desktop app.",
+  "author": { "name": "Little Bird Trading", "email": "hello@littlebirdtrading.com", "url": "https://promptpetal.com" },
+  "homepage": "https://promptpetal.com/ai-apps?ref=claude-code",
+  "repository": "https://github.com/none298-dotcom/promptpetal-mcp",
+  "license": "MIT",
+  "keywords": ["prompts", "prompt-manager", "mcp"]
+}
